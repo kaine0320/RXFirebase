@@ -2,6 +2,14 @@ use_frameworks!
 
 target '${POD_NAME}_Example' do
   pod '${POD_NAME}', :path => '../'
+   pod 'Firebase/Core'
+   pod 'Firebase/Database'
+   pod 'Firebase/Auth'
+   pod 'Firebase/Messaging'
+   pod 'Firebase/Storage'
+   
+   pod 'RxSwift',    '~> 3.0'
+   pod 'RxCocoa',    '~> 3.0'
 
   target '${POD_NAME}_Tests' do
     inherit! :search_paths
